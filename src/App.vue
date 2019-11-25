@@ -49,10 +49,10 @@
   <div class="navbar-end">
     <div class="navbar-item">
       <div class="buttons">
-        <a class="button is-primary">
+        <a class="button is-primary" href="registration">
           <strong>Sign up</strong>
         </a>
-        <a class="button is-light">
+        <a class="button is-light" href="login">
           Log in
         </a>
       </div>
@@ -60,6 +60,7 @@
   </div>
 </div>
 </nav>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -69,6 +70,11 @@
 export default {
   name: 'app',
   components: {
+  },
+  data: function(){
+    return{
+      inputValue: 'Initial value'
+    }
   }
 }
 
